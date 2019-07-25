@@ -1,0 +1,31 @@
+<!-- a login in page -->
+<ion-content class="host" >
+  <div class="img">
+    <ion-img  src="../assets/Queue_copy.png"></ion-img> 
+  </div>
+  <div class="txt">
+    <h1 class="h">Convenience at your fingertips</h1> 
+     
+  </div>
+  <div class="tet">
+
+  </div>
+  <div>
+      <!-- <firebase-ui (signInSuccessWithAuthResult)="successCallback($event)">
+        
+      </firebase-ui>         -->
+    <ion-button expand="block" fill="outline" class="button-outlne" (click)="googleLogin();"> 
+      <ion-icon name="mail" slot="start"></ion-icon>
+      <ion-label slot="end">Sign in with Gmail</ion-label>
+    </ion-button> 
+
+   <!--  <ion-button expand="block" fill="outline" class="button-outlin" (click)="facebookLogin();"> 
+      <ion-icon name="logo-facebook" slot="start"></ion-icon>
+      <ion-label slot="end">Sign in with facebook</ion-label>
+    </ion-button>  -->
+
+</div>
+<div  class="sk" (click)="skip();">
+  Skip to home
+</div>
+</ion-content>

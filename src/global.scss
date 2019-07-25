@@ -1,0 +1,157 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+@import '~firebaseui/dist/firebaseui.css';
+
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 25%;  
+}
+.homelogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.menuCenter {
+
+    background-color: #faf7f7;
+}
+
+.avator {
+    padding-top: 15%;
+    background-color: #faf7f7;
+}
+.ey-icon {
+    margin-left: -4%;
+    color: #48628c;
+    text-align: left;
+    background: #faf7f7;
+    margin-left: 5%;
+}
+ion-modal {
+    .modal-wrapper {
+        height: 30% !important;
+        width: 100% !important;
+        position: absolute;
+        top:70%;
+       
+        
+    }
+    &.Mymodal {
+        .modal-wrapper {
+            height: 100% !important;
+            width: 100% !important;
+          position: absolute; 
+         top: 0;
+         
+        }
+    
+    }
+    
+}
+.img {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.model-button{
+    width: 50%; 
+}
+
+.new-background-color{
+    --background: #48628c;
+    --color:#fff;
+}
+ion-content{
+  //  --ion-background-color:#faf7f7;
+}
+.ref-no{
+    font-weight: bold;
+    color: #48628c;
+}
+.ref-nu{
+    font-weight: bold;
+    color: #48628c;
+}
+/* ion-item {
+    height: 45%;
+    display: grid;
+} */
+svg.s-ion-icon{
+    color: #48628c;
+}
+.icon-inner, svg {
+    display: block;
+    fill: currentColor;
+    stroke: currentColor;
+    height: 100%;
+    width: 83%;
+    color: #48628c;
+}
+.colr{
+    color: #48628c;
+}
+.item-box1{
+    height: 7%;
+}
+.item-box2{
+    height: 29%;
+}
+.item-box3{
+    height: 7%;
+}
+.item-box4{
+    height: 14%;
+}
+.item-box5{
+    height: 7%;
+    margin-top: 8%;
+}
+.log {
+    color: #48628c;
+    width: 6%;
+    margin-left: 2%;
+}
+.name{
+    margin-right: 1%;
+}
+.mail{
+    margin-right: 1%;
+}
+ion-item {
+    --padding-start: 2%;
+}
+
+.sc-ion-card-ios-h {
+    margin-left: unset;
+    margin-right: unset;
+    -webkit-margin-start: 16px;
+    margin-inline-start: 16px;
+    -webkit-margin-end: 16px;
+    margin-inline-end: 16px;
+    border: 1px solid gray;
+   
+    
+}
+.img1 {
+    margin-bottom: 12%;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}

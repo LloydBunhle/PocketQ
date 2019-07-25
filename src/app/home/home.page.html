@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>
+      Home
+    </ion-title>
+    
+
+    <ion-icon ios="ios-contact" md="md-contact" slot="end" (click)="openCustom()" style="zoom:2.0;">
+    </ion-icon>
+  </ion-toolbar>
+
+
+</ion-header>
+
+<!-- home page /our home page -->
+<ion-content >
+  <ion-card-content class="bg-">
+    <div class="container">
+      <h1>
+       What would you like to do ?
+      </h1>
+    </div>
+  </ion-card-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-thumbnail class="homelogo">
+        <ion-icon class="icn" name="calendar" color="warning"></ion-icon>
+      </ion-thumbnail>
+    </ion-card-header>
+    <ion-card-content style="text-align: center">
+      <ion-button (click)="OpenMap()" expand="full">Book Appointment</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+  
+      <div class="refd">
+
+        <br>
+        <ion-card style="padding:6%;">
+          
+          <ion-card-content>
+            <ion-card-title>
+              <p>
+                Reference number generated after booking an appointment and to be redeemed at the branch where an appointment has been made.
+              </p>
+            </ion-card-title>
+          </ion-card-content>
+
+          <div *ngIf="refno; else elseBlock" class="circle blue">Ref No. : {{refno}}</div>
+          <ng-template #elseBlock>
+            <div class="circle blue">
+              No reference.
+            </div>
+          </ng-template>
+
+          <div *ngIf="refno;">
+            <p>
+              <ion-button (click)="cancel()">
+                <ion-icon slot="start" name="close-circle"></ion-icon>
+                Cancel Appointment
+              </ion-button>
+            </p>
+          </div>
+        </ion-card>
+      </div>
+   
+  <!-- menu bar tabs -->
+
+</ion-content>

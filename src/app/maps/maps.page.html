@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>
+      Maps
+    </ion-title>
+    
+    <ion-searchbar *ngIf="isSearchbarOpened"  showCancelButton="true" [(ngModel)]="searchTerm" (ionChange)="setFilteredLocations($events)">
+    </ion-searchbar>
+    <ion-buttons slot="end">
+      <button ion-button icon-only *ngIf="!isSearchbarOpened" (click)="isSearchbarOpened=true">
+        <ion-icon color="white" size="large" name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- maps page/primary page for making an appointment -->
+<ion-content >
+
+  <ion-segment mode="md" [(ngModel)]="section">
+    <ion-segment-button value="map">
+      <ion-label>Maps</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="list">
+      <ion-label>List</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="section">
+     <div [style.display]="section == 'map' ? 'block' : 'none'">
+      <div #map id="map" style="position: absolute;overflow: scroll;height: 100%;width: 100%;"></div>
+    </div>
+    <div *ngSwitchCase="'list'" >
+      <ion-card *ngFor="let topic of details">
+        <ion-card-content class="MapList" (click)="presentModal(topic.title,topic.address);">
+          {{ topic.title | uppercase }}
+        <br>
+          {{ topic.address | uppercase }}
+        </ion-card-content>
+      </ion-card>
+    </div> 
+  </div>
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-content>
+  <div id="modelColor">
+    <ion-toolbar text-center>
+      <ion-buttons slot="start">
+        
+        <ion-button color="blue" (click)="closeModal()">
+          <ion-icon name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>{{ modalTitle }}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button color="blue" (click)="directionl()">
+          <ion-icon name="compass"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center>
+          {{ modalAddress }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          {{ modalPhone }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <ion-button expand="full" (click)="stats()">Check how busy it is</ion-button>
+          <br />
+          <ion-button *ngIf="authlogin.isLoggedIn;else elsenot" expand="full" (click)="makeApp()">Make appointment
+          </ion-button>
+           <ng-template #elsenot>
+            <ion-button expand="full" (click)="login()">Please login to make appointment</ion-button>
+
+          </ng-template> 
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

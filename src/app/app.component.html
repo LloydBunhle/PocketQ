@@ -1,0 +1,47 @@
+<ion-app>
+  <!-- sidebar menu -->
+ <!-- sidebar menu -->
+ <ion-menu menuId="custom">
+    <ion-header>
+      <ion-toolbar class="new-background-color">
+        <ion-title></ion-title>
+      </ion-toolbar>
+    </ion-header>
+      <!-- The profile  -->
+    <ion-content>
+      <ion-item class="item-box1">
+        <div class="ref-nu">
+          <h3>Profile</h3>
+        </div>
+      </ion-item>     
+      <div class="img1">
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" style="width:200px;border-radius: 50%;border: 2px solid #48628c;
+          ">
+      </div>
+      <div *ngIf="authlogin.isLoggedIn;else elselog">
+        <ion-item  class="activated"   >
+          <ion-icon class="colr" name="person" slot="start"></ion-icon>
+          <ion-label>{{authlogin.displayName}}</ion-label>
+        </ion-item>
+        <!-- <ng-template #elseBlock >    
+        </ng-template> -->
+        <ion-item  >
+          <ion-icon class="colr" name="mail" slot="start"></ion-icon>
+          <ion-label>{{authlogin.email}}</ion-label>
+        </ion-item>
+        <ion-item class="activated" (click)="Out()">
+          <ion-icon class="colr" name="log-out" slot="start"></ion-icon>
+          <ion-label> logout</ion-label>
+        </ion-item>
+      </div>
+       <ng-template #elselog >
+          <ion-item  (click)="Out()" class="activated">
+            <ion-icon class="colr" name="log-out" slot="start"></ion-icon>
+            <ion-label> Sign up</ion-label>
+          </ion-item>  
+      </ng-template>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
+
+</ion-app>

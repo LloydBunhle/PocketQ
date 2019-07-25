@@ -1,0 +1,69 @@
+.nav-container{
+    height: 40px;
+    width: 50%;
+    background-color: blue;
+    display: inline-block;
+    text-align: -webkit-center;
+  }
+  .nev-container{
+    height: 40px;
+    width: 100%;
+  
+}
+
+.MapList{
+  background-color: #faf7f7;
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  margin: 0 !important;
+  font-size: medium;
+  color: #344886;
+  font: bolder;
+
+}
+// .host {
+//   --background:linear-gradient(to bottom,rgba(208, 223, 229, 0.822) 100%,rgba(255, 255, 255, 0.616) 200%,red 100%, gray 100%);
+//   --padding-bottom: 0px;
+//   --padding-start: 0px;
+//   --padding-end: 0px;
+//   --keyboard-offset: 0px;
+//   --offset-top: 0px;
+//   --offset-bottom: 0px;
+//   --overflow: auto;
+//   display: block;
+//   position: relative;
+//   -ms-flex: 1;
+//   flex: 1;
+//   width: 100%;
+//   height: 100%;
+//   margin: 0!important;
+//   padding: 0!important;
+//   font-family: var(--ion-font-family,inherit);
+//   contain: size style;
+//   background: url('../../assets/bnks.png') no-repeat center center fixed;
+// }
+  .lst-container{
+      background-color: #989aa2
+  }
+  .l-container{
+      display: block;
+  }
+  .klm {
+    color: #ef6630;
+    text-align: end;
+    margin-inline-start: 343px;
+}
+.sc-ion-card-md-h {
+  margin-left: unset;
+  margin-right: unset;
+  -webkit-margin-start: 10px;
+  margin-inline-start: 10px;
+  -webkit-margin-end: 10px;
+  margin-inline-end: 10px;
+  border: 1px solid #48628c;
+}
+button{
+  background: #48628c;
+  color:#fff;
+}
